@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "message": "Food data successfully fetched",
+  "data": [
+    {
+      "id": ""
+    }
+  ]
+}
