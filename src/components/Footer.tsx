@@ -1,3 +1,4 @@
+import { Link } from '@heroui/react';
 import {
   GithubLogoIcon,
   InstagramLogoIcon,
@@ -16,35 +17,28 @@ const Footer: React.FC = () => (
       {/* Menggunakan font-sans sebagai pengganti font-league-spartan */}
       <div className=' text-3xl font-bold font-sans'>MicinTime</div>
       <nav className='flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-4 '>
-        <a
-          href='#'
-          className='hover:text-accent transition-colors duration-200'
-        >
+        <Link isBlock color='primary' className='italic' href='#about'>
           About
-        </a>
-        <a
-          href='#'
-          className='hover:text-accent transition-colors duration-200'
-        >
+        </Link>
+
+        <Link isBlock color='primary' className='italic' href='#category'>
           Kategori
-        </a>
-        <a
-          href='#'
-          className='hover:text-accent transition-colors duration-200'
-        >
+        </Link>
+
+        <Link isBlock color='primary' className='italic' href='#recipe'>
           Resep
-        </a>
+        </Link>
       </nav>
       <div className='text-center md:text-right'>
-        <div className='flex justify-center md:justify-end gap-4 mt-2'>
-          <InstagramLogoIcon />
-          <GithubLogoIcon />
-          <TiktokLogoIcon />
-          <YoutubeLogoIcon />
-          <XLogoIcon />
+        <div className='flex justify-center md:justify-end gap-4 my-4'>
+          <InstagramLogoIcon size={24} />
+          <GithubLogoIcon size={24} />
+          <TiktokLogoIcon size={24} />
+          <YoutubeLogoIcon size={24} />
+          <XLogoIcon size={24} />
         </div>
-        <p className='text-sm mb-2'>© 2025 kipilinyu. All right reserved</p>
-        <p className='text-sm'>Support: kipilinyu@gmail.com</p>
+        {/* <p className='text-sm mb-2'>© 2025 kipilinyu. All right reserved</p>
+        <p className='text-sm'>Support: kipilinyu@gmail.com</p> */}
       </div>
     </div>
   </footer>

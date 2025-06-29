@@ -1,6 +1,9 @@
+import { NavLink } from 'react-router';
+
 const CallToAction = () => {
   return (
     <div
+      id='about'
       className={`flex font-inter items-center justify-center bg-accent pl-8 w-full md:flex-row`}
     >
       <div className={`flex flex-col gap-4 text-white w-1/2`}>
@@ -14,9 +17,12 @@ const CallToAction = () => {
           <span className='text-primary italic font-bold'>Dijamin kenyang</span>
           , dompet aman!
         </p>
-        <button className='bg-primary text-white px-8 py-3 w-fit italic font-bold rounded-full text-lg hover:bg-opacity-90 transition-colors duration-300 shadow-md'>
+        <NavLink
+          to={'/menu-list'}
+          className='bg-primary text-white px-8 py-3 w-fit italic font-bold rounded-full text-lg hover:bg-opacity-90 transition-colors duration-300 shadow-md'
+        >
           BUKA RESEP GRATIS
-        </button>
+        </NavLink>
       </div>
       <img
         src={'/blob.png'}

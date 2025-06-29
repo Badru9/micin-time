@@ -5,78 +5,19 @@ import RecipeCard from './components/RecipeCard';
 import CallToAction from './components/CallToAction';
 import Footer from './components/Footer';
 import { MagnifyingGlassIcon } from '@phosphor-icons/react';
+import Recipes from './data/food.json';
+import { useDebounce } from 'use-debounce';
 
-// Dummy data untuk resep
-const dummyRecipes = [
-  {
-    id: '1',
-    name: 'Telur Dadar Micin',
-    image: 'https://placehold.co/150x150/F2BE22/FFF?text=Telur%20Dadar',
-    description:
-      'Telur dadar gurih ala anak kos, dengan tekstur renyah di permukaan crispy golden!',
-    prepTime: '8 Menit',
-  },
-  {
-    id: '2',
-    name: 'Indomie Telur Kribo',
-    image: 'https://placehold.co/150x150/F2BE22/FFF?text=Indomie%20Kribo',
-    description:
-      'Indomie goreng dicampur telur, jadinya kribo kayak rambut gimbal!',
-    prepTime: '10 Menit',
-  },
-  {
-    id: '3',
-    name: 'Sandwich Telur Mayo',
-    image: 'https://placehold.co/150x150/F2BE22/FFF?text=Sandwich',
-    description:
-      'Telur rebus dihancur + mayo + lada, digigit di roti tawar. Sarapan enak!',
-    prepTime: '7 Menit',
-  },
-  {
-    id: '4',
-    name: 'Nasi Goreng Simpel',
-    image: 'https://placehold.co/150x150/F2BE22/FFF?text=Nasi%20Goreng',
-    description: 'Nasi goreng simpel dan cepat saji, cocok untuk perut lapar.',
-    prepTime: '15 Menit',
-  },
-];
-
-// Dummy data untuk background, karena /main-bg.png tidak tersedia.
-// Anda bisa menggantinya dengan URL gambar yang sebenarnya.
 const mainBackground = '/main-bg.png';
-const kitchenBackground = '/blob.png';
-
-interface SectionTitleProps {
-  title: string;
-  subtitle: string;
-}
-
-const SectionTitle: React.FC<SectionTitleProps> = ({ title, subtitle }) => (
-  <div className='text-center'>
-    {/* Menggunakan font-sans sebagai pengganti font-league-spartan */}
-    <h2 className='font-sans font-bold text-primary text-5xl md:text-6xl lg:text-7xl mb-4'>
-      {title}
-    </h2>
-    <p className='font-sans font-bold text-accent text-3xl md:text-4xl lg:text-5xl'>
-      {subtitle}
-    </p>
-  </div>
-);
 
 function App() {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [debouncedQuery] = useDebounce(searchQuery, 1000);
 
-  // Callback untuk mengambil resep. Menggunakan useCallback untuk stabilitas fungsi.
   const fetchRecipes = useCallback(async () => {
     try {
-      // Menggunakan dummy data lokal daripada API eksternal untuk demo.
-      // Jika ingin menggunakan API dummyjson, aktifkan kembali kode di bawah ini.
-      // const result = await fetch('https://dummyjson.com/recipes');
-      // const response = await result.json();
-      // setRecipes(response.recipes || []);
-
-      setRecipes(dummyRecipes); // Menggunakan dummy data lokal
+      setRecipes(Recipes.data);
     } catch (error) {
       console.error('Failed to fetch recipes:', error);
       // Handle error, misalnya tampilkan pesan kepada user
@@ -85,13 +26,13 @@ function App() {
 
   useEffect(() => {
     fetchRecipes();
-  }, [fetchRecipes]); // Dependency array memastikan ini berjalan sekali saat komponen mount
+  }, [fetchRecipes]);
 
   // Filter resep berdasarkan query pencarian
   const filteredRecipes = recipes.filter(
     (recipe) =>
-      recipe.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      recipe.description.toLowerCase().includes(searchQuery.toLowerCase())
+      recipe.name.toLowerCase().includes(debouncedQuery.toLowerCase()) ||
+      recipe.description.toLowerCase().includes(debouncedQuery.toLowerCase())
   );
 
   return (
@@ -132,17 +73,25 @@ function App() {
             Dapur kosan sepi ide? Cuss cari resep di sini!
           </h3>
         </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 my-16 px-8'>
+        <div
+          id='recipe'
+          className='flex overflow-x-auto snap-x snap-mandatory scroll-smooth w-full px-8 py-4 gap-8 my-16 hide-scrollbar'
+        >
           {filteredRecipes.length > 0 ? (
             filteredRecipes.map((recipe) => (
-              <RecipeCard key={recipe.id} recipe={recipe} />
+              <div key={recipe.id} className='min-w-[300px] snap-center'>
+                <RecipeCard recipe={recipe} />
+              </div>
             ))
           ) : (
-            <p className='col-span-full text-center text-gray-700 text-lg'>
-              Tidak ada resep yang ditemukan.
+            <p className='flex-shrink-0 w-full text-center text-gray-700 text-lg'>
+              {debouncedQuery.trim() === ''
+                ? 'Tidak ada resep yang tersedia.'
+                : `Tidak ada resep yang ditemukan untuk "${debouncedQuery}".`}
             </p>
           )}
         </div>
+
         <CallToAction />
         <TestimonialCard
           quote='Dulu aku cuma bisa indomie + telur. Sekalinya masak nasi goreng gosong. Eh semenjak pake MicinTime, jadilah Chef Arnold anak kos!'

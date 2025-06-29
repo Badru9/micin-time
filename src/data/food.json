@@ -3,7 +3,577 @@
   "message": "Food data successfully fetched",
   "data": [
     {
-      "id": ""
+      "id": "1",
+      "name": "Telur Dadar Micin",
+      "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=150&h=150&fit=crop",
+      "description": "Telur dadar gurih ala anak kos, dengan tekstur renyah di permukaan crispy golden!",
+      "prepTime": "8 Menit",
+      "ingredients": ["Telur", "Micin", "Minyak goreng", "Garam"],
+      "totalBudget": 5000,
+      "instructions": [
+        "Pecahkan 2 butir telur ke dalam mangkok.",
+        "Tambahkan sejumput micin dan garam, kocok rata.",
+        "Panaskan sedikit minyak goreng di wajan.",
+        "Tuang adonan telur ke wajan, ratakan.",
+        "Masak hingga matang dan bagian bawah berwarna keemasan, balik.",
+        "Masak hingga kedua sisi matang. Sajikan selagi hangat."
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Indomie Telur Kribo",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=150&h=150&fit=crop",
+      "description": "Indomie goreng dicampur telur, jadinya kribo kayak rambut gimbal!",
+      "prepTime": "10 Menit",
+      "ingredients": ["Indomie goreng", "Telur", "Minyak goreng", "Air"],
+      "totalBudget": 6000,
+      "instructions": [
+        "Rebus Indomie hingga matang, sisihkan air rebusan sedikit.",
+        "Siapkan bumbu Indomie di piring.",
+        "Panaskan sedikit minyak, masukkan telur dan orak-arik hingga matang.",
+        "Masukkan mie yang sudah direbus ke dalam wajan bersama telur orak-arik.",
+        "Tambahkan bumbu Indomie dan sedikit air rebusan mie, aduk rata hingga semua tercampur.",
+        "Masak sebentar hingga bumbu meresap. Sajikan."
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Sandwich Telur Mayo",
+      "image": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=150&h=150&fit=crop",
+      "description": "Telur rebus dihancur + mayo + lada, digigit di roti tawar. Sarapan enak!",
+      "prepTime": "7 Menit",
+      "ingredients": ["Roti tawar", "Telur", "Mayones", "Lada", "Garam"],
+      "totalBudget": 8000,
+      "instructions": [
+        "Rebus telur hingga matang (sekitar 7-10 menit). Dinginkan dan kupas.",
+        "Hancurkan telur rebus dengan garpu di mangkok.",
+        "Tambahkan mayones, lada, dan sedikit garam. Aduk rata.",
+        "Oleskan campuran telur ke atas selembar roti tawar.",
+        "Tutup dengan selembar roti tawar lainnya. Potong diagonal jika suka. Sajikan."
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Nasi Goreng Simpel",
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=150&h=150&fit=crop",
+      "description": "Nasi goreng simpel dan cepat saji, cocok untuk perut lapar.",
+      "prepTime": "15 Menit",
+      "ingredients": [
+        "Nasi",
+        "Telur",
+        "Kecap manis",
+        "Bawang putih",
+        "Cabai",
+        "Minyak goreng"
+      ],
+      "totalBudget": 7000,
+      "instructions": [
+        "Cincang bawang putih dan cabai. Sisihkan.",
+        "Panaskan minyak di wajan, masukkan telur dan orak-arik, sisihkan di pinggir wajan.",
+        "Masukkan bawang putih dan cabai, tumis hingga harum.",
+        "Masukkan nasi, aduk rata dengan telur dan bumbu.",
+        "Tambahkan kecap manis, aduk rata hingga nasi terbalut bumbu dan sedikit kering.",
+        "Koreksi rasa, angkat dan sajikan selagi hangat."
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Mie Ayam Instant",
+      "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=150&h=150&fit=crop",
+      "description": "Mie instant dengan potongan ayam suwir, praktis dan mengenyangkan.",
+      "prepTime": "12 Menit",
+      "ingredients": [
+        "Mie instant",
+        "Ayam suwir",
+        "Sawi",
+        "Bawang goreng",
+        "Kecap"
+      ],
+      "totalBudget": 12000,
+      "instructions": [
+        "Rebus mie instant hingga matang, angkat dan tiriskan.",
+        "Rebus sebentar sawi hingga layu, tiriskan.",
+        "Siapkan bumbu mie instant di mangkok.",
+        "Masukkan mie ke mangkok bumbu, aduk rata.",
+        "Tata mie di mangkok, beri ayam suwir, sawi, bawang goreng, dan sedikit kecap di atasnya.",
+        "Sajikan selagi hangat."
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Pisang Goreng Crispy",
+      "image": "https://images.unsplash.com/photo-1541544181051-e46607ea476c?w=150&h=150&fit=crop",
+      "description": "Pisang dibalut tepung crispy, gorengan favorit anak kos!",
+      "prepTime": "10 Menit",
+      "ingredients": [
+        "Pisang",
+        "Tepung terigu",
+        "Gula",
+        "Garam",
+        "Air",
+        "Minyak goreng"
+      ],
+      "totalBudget": 8000,
+      "instructions": [
+        "Kupas pisang, belah dua memanjang atau iris sesuai selera.",
+        "Campurkan tepung terigu, gula, garam, dan air secukupnya hingga menjadi adonan kental.",
+        "Celupkan pisang ke dalam adonan tepung hingga terbalut rata.",
+        "Panaskan minyak goreng yang cukup banyak.",
+        "Goreng pisang hingga kuning keemasan dan crispy. Angkat dan tiriskan.",
+        "Sajikan hangat sebagai cemilan atau teman minum teh."
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Nasi Uduk Sederhana",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=150&h=150&fit=crop",
+      "description": "Nasi uduk dengan santan instan, wangi dan gurih seperti buatan emak.",
+      "prepTime": "25 Menit",
+      "ingredients": ["Beras", "Santan instan", "Daun pandan", "Garam", "Air"],
+      "totalBudget": 9000,
+      "instructions": [
+        "Cuci bersih beras, masukkan ke rice cooker.",
+        "Larutkan santan instan dengan air sesuai takaran nasi. Tambahkan garam dan daun pandan.",
+        "Tuang larutan santan ke dalam beras di rice cooker.",
+        "Masak nasi seperti biasa hingga matang.",
+        "Setelah matang, aduk rata nasi. Sajikan dengan lauk pendamping sederhana."
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Tempe Goreng Tepung",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=150&h=150&fit=crop",
+      "description": "Tempe crispy dengan balutan tepung berbumbu, murah meriah!",
+      "prepTime": "8 Menit",
+      "ingredients": [
+        "Tempe",
+        "Tepung terigu",
+        "Bawang putih",
+        "Garam",
+        "Air",
+        "Minyak goreng"
+      ],
+      "totalBudget": 6000,
+      "instructions": [
+        "Iris tempe tipis-tipis atau sesuai selera.",
+        "Haluskan bawang putih dan campurkan dengan tepung terigu, garam, dan air hingga menjadi adonan kental.",
+        "Celupkan irisan tempe ke dalam adonan tepung hingga terbalut rata.",
+        "Panaskan minyak goreng yang cukup banyak.",
+        "Goreng tempe hingga kuning keemasan dan crispy. Angkat dan tiriskan.",
+        "Sajikan hangat dengan cabai rawit atau saus sambal."
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Soto Ayam Instant",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=150&h=150&fit=crop",
+      "description": "Soto ayam dengan bumbu instant, hangat dan menghangatkan hati.",
+      "prepTime": "15 Menit",
+      "ingredients": [
+        "Bumbu soto instant",
+        "Ayam suwir",
+        "Tahu",
+        "Tauge",
+        "Daun bawang"
+      ],
+      "totalBudget": 15000,
+      "instructions": [
+        "Rebus air hingga mendidih. Masukkan bumbu soto instant, aduk rata.",
+        "Masak hingga bumbu larut dan kuah mendidih kembali.",
+        "Siapkan mangkok, tata tahu, tauge, dan ayam suwir.",
+        "Siram dengan kuah soto panas.",
+        "Taburi dengan irisan daun bawang dan bawang goreng (jika ada). Sajikan."
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Bakso Bakar Sederhana",
+      "image": "https://images.unsplash.com/photo-1551782450-17144efb9c50?w=150&h=150&fit=crop",
+      "description": "Bakso dibakar dengan bumbu kecap, praktis dan lezat.",
+      "prepTime": "10 Menit",
+      "ingredients": [
+        "Bakso",
+        "Kecap manis",
+        "Sambal",
+        "Margarin",
+        "Bawang putih"
+      ],
+      "totalBudget": 10000,
+      "instructions": [
+        "Tusuk bakso ke tusuk sate (jika ada, atau biarkan lepas).",
+        "Campurkan kecap manis, sambal, margarin cair, dan bawang putih halus sebagai bumbu olesan.",
+        "Olesi bakso dengan bumbu. Bakar di teflon atau panggangan hingga matang dan sedikit gosong.",
+        "Sajikan hangat dengan sisa bumbu olesan atau saus favorit."
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Pancake Pisang Mini",
+      "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=150&h=150&fit=crop",
+      "description": "Pancake mini dengan pisang, manis dan kenyang untuk sarapan.",
+      "prepTime": "12 Menit",
+      "ingredients": [
+        "Tepung terigu",
+        "Pisang",
+        "Telur",
+        "Susu",
+        "Gula",
+        "Baking powder"
+      ],
+      "totalBudget": 11000,
+      "instructions": [
+        "Haluskan pisang. Campurkan dengan telur, susu, dan gula, aduk rata.",
+        "Masukkan tepung terigu dan baking powder, aduk hingga adonan licin (jangan overmix).",
+        "Panaskan teflon dengan api kecil, olesi sedikit margarin (opsional).",
+        "Tuang satu sendok sayur adonan, masak hingga muncul gelembung di permukaan, balik.",
+        "Masak hingga kedua sisi matang. Ulangi hingga adonan habis.",
+        "Sajikan dengan madu, sirup maple, atau topping favorit."
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Capcay Tahu Sederhana",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150&h=150&fit=crop",
+      "description": "Tumisan sayuran dengan tahu, sehat dan bergizi.",
+      "prepTime": "15 Menit",
+      "ingredients": [
+        "Tahu",
+        "Sawi",
+        "Wortel",
+        "Bawang putih",
+        "Kecap asin",
+        "Minyak goreng"
+      ],
+      "totalBudget": 9000,
+      "instructions": [
+        "Potong tahu bentuk dadu, goreng sebentar hingga berkulit, sisihkan.",
+        "Iris wortel dan sawi. Cincang bawang putih.",
+        "Panaskan minyak, tumis bawang putih hingga harum.",
+        "Masukkan wortel, tumis sebentar hingga sedikit layu.",
+        "Masukkan sawi dan tahu, tambahkan kecap asin dan sedikit air. Aduk rata.",
+        "Masak hingga sayuran matang dan kuah mengental (opsional bisa tambah larutan maizena). Sajikan."
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Kentang Goreng Bumbu",
+      "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=150&h=150&fit=crop",
+      "description": "Kentang goreng dengan bumbu tabur, cemilan nikmat dan murah.",
+      "prepTime": "20 Menit",
+      "ingredients": [
+        "Kentang",
+        "Tepung terigu",
+        "Bawang putih",
+        "Garam",
+        "Cabai bubuk",
+        "Minyak goreng"
+      ],
+      "totalBudget": 8000,
+      "instructions": [
+        "Kupas kentang, potong memanjang seperti french fries. Rendam dalam air garam sebentar.",
+        "Tiriskan kentang, taburi dengan sedikit tepung terigu hingga rata.",
+        "Panaskan minyak yang cukup banyak.",
+        "Goreng kentang hingga kuning keemasan dan renyah. Angkat dan tiriskan.",
+        "Saat masih panas, taburi dengan bawang putih bubuk, garam, dan cabai bubuk (atau bumbu tabur instan). Kocok rata. Sajikan."
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Bubur Ayam Instant",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=150&h=150&fit=crop",
+      "description": "Bubur ayam hangat dengan bumbu instant, cocok saat sakit.",
+      "prepTime": "18 Menit",
+      "ingredients": [
+        "Beras",
+        "Ayam suwir",
+        "Bawang goreng",
+        "Seledri",
+        "Garam",
+        "Kaldu ayam"
+      ],
+      "totalBudget": 12000,
+      "instructions": [
+        "Cuci beras, masak dengan air dan sedikit garam hingga menjadi bubur (bisa pakai rice cooker mode bubur atau panci biasa).",
+        "Siapkan mangkok, masukkan bubur yang sudah matang.",
+        "Tata ayam suwir di atas bubur. Taburi dengan bawang goreng dan irisan seledri.",
+        "Tambahkan sedikit kaldu ayam hangat atau bumbu bubur instan jika suka. Sajikan."
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Martabak Telur Mini",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=150&h=150&fit=crop",
+      "description": "Martabak telur ukuran mini, praktis dan mengenyangkan.",
+      "prepTime": "15 Menit",
+      "ingredients": [
+        "Kulit lumpia",
+        "Telur",
+        "Daun bawang",
+        "Tauge",
+        "Garam",
+        "Minyak goreng"
+      ],
+      "totalBudget": 10000,
+      "instructions": [
+        "Iris tipis daun bawang. Kocok telur di mangkok, masukkan daun bawang, tauge, dan garam. Aduk rata.",
+        "Ambil selembar kulit lumpia, letakkan adonan telur di tengahnya (jangan terlalu banyak).",
+        "Lipat kulit lumpia hingga membentuk amplop persegi atau segitiga, pastikan rapat.",
+        "Panaskan minyak di wajan, goreng martabak mini hingga kuning keemasan dan kulitnya crispy.",
+        "Angkat dan tiriskan. Sajikan hangat dengan cabai rawit atau saus sambal."
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Sayur Asem Instant",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150&h=150&fit=crop",
+      "description": "Sayur asem dengan bumbu instant, segar dan sehat.",
+      "prepTime": "20 Menit",
+      "ingredients": [
+        "Bumbu sayur asem",
+        "Jagung",
+        "Kacang panjang",
+        "Labu siam",
+        "Tomat"
+      ],
+      "totalBudget": 11000,
+      "instructions": [
+        "Potong-potong jagung, kacang panjang, labu siam, dan tomat sesuai selera.",
+        "Didihkan air di panci, masukkan bumbu sayur asem instan, aduk rata.",
+        "Masukkan jagung dan labu siam terlebih dahulu, masak hingga sedikit empuk.",
+        "Masukkan kacang panjang dan tomat, masak sebentar hingga semua sayuran matang.",
+        "Koreksi rasa, tambahkan gula atau garam jika perlu. Sajikan hangat."
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Omelet Keju Sederhana",
+      "image": "https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=150&h=150&fit=crop",
+      "description": "Omelet dengan keju leleh, protein tinggi dan lezat.",
+      "prepTime": "8 Menit",
+      "ingredients": [
+        "Telur",
+        "Keju",
+        "Susu",
+        "Garam",
+        "Lada",
+        "Minyak goreng"
+      ],
+      "totalBudget": 13000,
+      "instructions": [
+        "Pecahkan 2 butir telur ke dalam mangkok.",
+        "Tambahkan sedikit susu, garam, dan lada. Kocok rata.",
+        "Parut keju atau potong dadu kecil.",
+        "Panaskan sedikit minyak di teflon dengan api sedang.",
+        "Tuang adonan telur ke teflon, ratakan.",
+        "Taburi keju di atasnya. Masak hingga bagian bawah matang dan keju meleleh.",
+        "Lipat omelet menjadi dua atau gulung. Sajikan hangat."
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Nasi Kuning Simpel",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=150&h=150&fit=crop",
+      "description": "Nasi kuning dengan kunyit dan santan, wangi dan istimewa.",
+      "prepTime": "30 Menit",
+      "ingredients": [
+        "Beras",
+        "Kunyit",
+        "Santan",
+        "Daun salam",
+        "Garam",
+        "Air"
+      ],
+      "totalBudget": 10000,
+      "instructions": [
+        "Cuci bersih beras. Parut kunyit dan ambil airnya (atau pakai bubuk kunyit).",
+        "Campurkan beras, air kunyit, santan, daun salam, dan garam di rice cooker.",
+        "Aduk rata. Masak nasi seperti biasa hingga matang.",
+        "Setelah matang, aduk rata nasi kuning agar warnanya merata. Sajikan dengan lauk pendamping."
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Tahu Crispy Pedas",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=150&h=150&fit=crop",
+      "description": "Tahu goreng crispy dengan bumbu pedas, mantap untuk cemilan.",
+      "prepTime": "12 Menit",
+      "ingredients": [
+        "Tahu",
+        "Tepung terigu",
+        "Cabai bubuk",
+        "Bawang putih",
+        "Garam",
+        "Minyak goreng"
+      ],
+      "totalBudget": 7000,
+      "instructions": [
+        "Potong tahu bentuk dadu kecil atau sesuai selera.",
+        "Campurkan tepung terigu, cabai bubuk, bawang putih bubuk (atau cincang halus), dan garam.",
+        "Gulingkan tahu ke dalam campuran tepung hingga terbalut rata.",
+        "Panaskan minyak yang cukup banyak.",
+        "Goreng tahu hingga kuning keemasan dan crispy. Angkat dan tiriskan.",
+        "Sajikan hangat dengan saus sambal atau taburan bumbu pedas instan."
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Sup Telur Tomat",
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=150&h=150&fit=crop",
+      "description": "Sup telur dengan tomat segar, hangat dan menyehatkan.",
+      "prepTime": "10 Menit",
+      "ingredients": [
+        "Telur",
+        "Tomat",
+        "Daun bawang",
+        "Garam",
+        "Kaldu ayam",
+        "Air"
+      ],
+      "totalBudget": 8000,
+      "instructions": [
+        "Potong tomat bentuk dadu. Iris daun bawang.",
+        "Didihkan air di panci, masukkan tomat. Masak sebentar hingga tomat sedikit layu.",
+        "Pecahkan telur satu per satu ke dalam sup (atau kocok lepas telur lalu tuang perlahan sambil diaduk).",
+        "Tambahkan garam dan kaldu ayam bubuk. Aduk rata.",
+        "Masak sebentar hingga telur matang. Taburi dengan daun bawang sebelum disajikan."
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Gado-gado Sederhana",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150&h=150&fit=crop",
+      "description": "Gado-gado dengan bumbu kacang instant, segar dan bergizi.",
+      "prepTime": "15 Menit",
+      "ingredients": [
+        "Tahu",
+        "Tempe",
+        "Kangkung",
+        "Tauge",
+        "Bumbu kacang instant",
+        "Kerupuk"
+      ],
+      "totalBudget": 12000,
+      "instructions": [
+        "Rebus kangkung dan tauge sebentar hingga matang, tiriskan.",
+        "Goreng tahu dan tempe hingga matang, potong-potong.",
+        "Seduh bumbu kacang instan dengan air panas hingga kekentalan yang diinginkan.",
+        "Tata tahu, tempe, kangkung, dan tauge di piring.",
+        "Siram dengan bumbu kacang. Sajikan dengan kerupuk sebagai pelengkap."
+      ]
+    },
+    {
+      "id": "22",
+      "name": "Mie Goreng Jawa",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=150&h=150&fit=crop",
+      "description": "Mie goreng dengan bumbu kecap manis ala Jawa, manis gurih.",
+      "prepTime": "12 Menit",
+      "ingredients": [
+        "Mie telur",
+        "Kecap manis",
+        "Sawi",
+        "Telur",
+        "Bawang merah",
+        "Cabai"
+      ],
+      "totalBudget": 9000,
+      "instructions": [
+        "Rebus mie telur hingga matang, tiriskan.",
+        "Iris sawi. Cincang bawang merah dan cabai.",
+        "Panaskan sedikit minyak, masukkan telur dan orak-arik. Sisihkan.",
+        "Tumis bawang merah dan cabai hingga harum.",
+        "Masukkan mie dan sawi, tambahkan kecap manis. Aduk rata dengan telur orak-arik.",
+        "Masak sebentar hingga bumbu meresap. Koreksi rasa. Sajikan."
+      ]
+    },
+    {
+      "id": "23",
+      "name": "Pepes Tahu Mikrowave",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=150&h=150&fit=crop",
+      "description": "Pepes tahu praktis dengan microwave, sehat dan lezat.",
+      "prepTime": "20 Menit",
+      "ingredients": [
+        "Tahu",
+        "Bumbu pepes instant",
+        "Daun pisang",
+        "Cabai",
+        "Tomat"
+      ],
+      "totalBudget": 11000,
+      "instructions": [
+        "Haluskan tahu, campurkan dengan bumbu pepes instan.",
+        "Tambahkan irisan cabai dan tomat jika suka, aduk rata.",
+        "Ambil daun pisang, letakkan adonan tahu di tengahnya.",
+        "Bungkus rapi seperti pepes tradisional, semat dengan lidi (opsional).",
+        "Kukus atau masukkan ke microwave selama 5-10 menit (hingga matang).",
+        "Sajikan hangat."
+      ]
+    },
+    {
+      "id": "24",
+      "name": "Nasi Ayam Suwir",
+      "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=150&h=150&fit=crop",
+      "description": "Nasi putih dengan ayam suwir bumbu, komplit dan mengenyangkan.",
+      "prepTime": "15 Menit",
+      "ingredients": [
+        "Nasi",
+        "Ayam suwir",
+        "Bawang merah",
+        "Cabai",
+        "Kecap manis",
+        "Minyak goreng"
+      ],
+      "totalBudget": 14000,
+      "instructions": [
+        "Rebus ayam hingga matang, suwir-suwir. Sisihkan.",
+        "Iris bawang merah dan cabai. Tumis hingga harum.",
+        "Masukkan ayam suwir, tambahkan kecap manis dan sedikit air. Aduk rata hingga bumbu meresap.",
+        "Sajikan ayam suwir di atas nasi putih hangat. Bisa ditambah kerupuk."
+      ]
+    },
+    {
+      "id": "25",
+      "name": "Es Kelapa Muda",
+      "image": "https://images.unsplash.com/photo-1544145945-f90425340c7e?w=150&h=150&fit=crop",
+      "description": "Minuman segar kelapa muda dengan es, perfect untuk cuaca panas.",
+      "prepTime": "5 Menit",
+      "ingredients": ["Kelapa muda", "Es batu", "Gula", "Garam", "Air"],
+      "totalBudget": 15000,
+      "instructions": [
+        "Ambil daging kelapa muda dengan sendok, sisihkan.",
+        "Tuang air kelapa ke dalam gelas atau mangkuk.",
+        "Tambahkan es batu secukupnya.",
+        "Larutkan gula dan sedikit garam dalam air hangat, lalu campurkan ke air kelapa. Aduk rata.",
+        "Masukkan daging kelapa muda. Sajikan segera."
+      ]
+    },
+    {
+      "id": "26",
+      "name": "Roti Bakar Cokelat Keju",
+      "image": "https://images.unsplash.com/photo-1534352697808-8e6f1f4b3c0c?w=150&h=150&fit=crop",
+      "description": "Roti tawar dibakar dengan isian meises cokelat dan keju parut, cemilan manis gurih.",
+      "prepTime": "5 Menit",
+      "ingredients": ["Roti tawar", "Meises cokelat", "Keju cheddar"],
+      "totalBudget": 7000,
+      "instructions": [
+        "Ambil selembar roti tawar, taburi dengan meises cokelat dan keju parut sesuai selera.",
+        "Tutup dengan selembar roti tawar lainnya.",
+        "Panggang di teflon atau toaster hingga roti kecoklatan dan keju meleleh. Sajikan hangat."
+      ]
+    },
+    {
+      "id": "27",
+      "name": "Telur Ceplok Kecap",
+      "image": "https://images.unsplash.com/photo-1546069901-dcd13b7f14b6?w=150&h=150&fit=crop",
+      "description": "Telur ceplok sederhana disiram kecap manis, lauk cepat dan enak.",
+      "prepTime": "5 Menit",
+      "ingredients": ["Telur", "Kecap manis", "Minyak goreng"],
+      "totalBudget": 4000,
+      "instructions": [
+        "Panaskan sedikit minyak goreng di wajan.",
+        "Pecahkan telur ke wajan, masak hingga putih telur matang dan kuning telur sesuai selera.",
+        "Angkat telur ceplok, letakkan di piring.",
+        "Siram dengan kecap manis secukupnya. Sajikan hangat dengan nasi."
+      ]
     }
   ]
 }

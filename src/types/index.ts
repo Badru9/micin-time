@@ -1,20 +1,7 @@
-export interface RecipeTypes {
-  id: number;
-  name: string;
-  ingredients: string[];
-  instructions: string[];
-  prepTimeMinutes: number;
-  cookTimeMinutes: number;
-  servings: number;
-  difficulty: string;
-  cuisine: string;
-  caloriesPerServing: number;
-  tags: string[];
-  userId: number;
-  image: string;
-  rating: number;
-  reviewCount: number;
-  mealType: string[];
+export interface ResponseTypes {
+  success: boolean;
+  message: string;
+  data: Recipe[];
 }
 
 export interface Recipe {
@@ -23,4 +10,7 @@ export interface Recipe {
   image: string;
   description: string;
   prepTime: string;
+  ingredients: string[];
+  totalBudget: number;
+  instructions: Array<string>;
 }
