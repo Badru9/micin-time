@@ -4,7 +4,7 @@ const CallToAction = () => {
   return (
     <div
       id='about'
-      className={`flex font-inter items-center justify-center bg-accent pl-8 w-full md:flex-row`}
+      className={`flex font-quicksand items-center justify-center bg-accent pl-8 w-full md:flex-row`}
     >
       <div className={`flex flex-col gap-4 text-white w-1/2`}>
         <h3 className='text-5xl text-white md:text-4xl italic font-bold font-sans mb-2'>

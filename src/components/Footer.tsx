@@ -14,16 +14,15 @@ import {
 const Footer: React.FC = () => (
   <footer className='bg-accent text-white py-10'>
     <div className='container mx-auto px-4 flex flex-col md:flex-row justify-between items-center'>
-      {/* Menggunakan font-sans sebagai pengganti font-league-spartan */}
       <div className=' text-3xl font-bold font-sans'>MicinTime</div>
       <nav className='flex flex-wrap justify-center md:justify-start gap-x-8 gap-y-4 '>
         <Link isBlock color='primary' className='italic' href='#about'>
           About
         </Link>
 
-        <Link isBlock color='primary' className='italic' href='#category'>
+        {/* <Link isBlock color='primary' className='italic' href='#category'>
           Kategori
-        </Link>
+        </Link> */}
 
         <Link isBlock color='primary' className='italic' href='#recipe'>
           Resep

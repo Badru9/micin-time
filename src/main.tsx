@@ -5,20 +5,32 @@ import App from './App.tsx';
 import { HeroUIProvider } from '@heroui/react';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import RecipeDetailPage from './recipe-detail/[id]/page.tsx';
-import MenuList from './menu-list/page.tsx';
+import MenuListPage from './menu-list/page.tsx';
+import HomePageContent from './components/HomeMainContent.tsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <App />, // App akan menjadi root layout
+    errorElement: <div>Oops! Something went wrong.</div>,
+    children: [
+      {
+        index: true, // Render HomePageContent saat di root path '/'
+        element: <HomePageContent />,
+      },
+      {
+        path: 'recipes', // Rute untuk halaman daftar resep
+        element: <MenuListPage />, // Gunakan MenuListPage untuk rute /recipes
+      },
+    ],
   },
   {
-    path: '/recipe-detail/:id',
+    path: 'menu-list', // Rute untuk halaman daftar resep
+    element: <MenuListPage />, // Gunakan MenuListPage untuk rute /recipes
+  },
+  {
+    path: 'recipe-detail/:id',
     element: <RecipeDetailPage />,
-  },
-  {
-    path: '/menu-list',
-    element: <MenuList />,
   },
 ]);
 

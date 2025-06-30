@@ -9,7 +9,7 @@ html {
 
 @theme {
   --font-league-spartan: 'League Spartan', 'sans-serif';
-  --font-inter: 'Inter', 'sans-serif';
+  --font-quicksand: 'Quicksand', 'sans-serif';
 }
 
 .hide-scrollbar::-webkit-scrollbar {
